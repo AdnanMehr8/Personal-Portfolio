@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import { useSelector } from 'react-redux';
-import spinner from './3.png';
+
 
 const Experiences = () => {
     const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);

@@ -32,14 +32,14 @@ function App() {
     if (reloadData) {
       getPortfolioData();
     }
-  }, [reloadData])
+  }, [reloadData, getPortfolioData])
 
 
   useEffect(() => {
     if (!portfolioData) {
       getPortfolioData();
     }
-  }, [portfolioData]);
+  }, [portfolioData, getPortfolioData]);
 
 
   return (

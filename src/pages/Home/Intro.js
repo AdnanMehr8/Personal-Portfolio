@@ -11,7 +11,7 @@ const Intro = () => {
     <div>
     <div>
       <img
-        className="absolute top-6 left-6 w-20 h-20 opacity-65 transform -translate-y-1/2 rounded-full"
+        className="absolute top-10 left-6 w-20 h-20 opacity-65 transform -translate-y-1/2 rounded-full"
         src={profilePhoto}
         alt="Profile"
       />

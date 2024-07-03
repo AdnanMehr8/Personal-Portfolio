@@ -14,7 +14,8 @@ html, body{
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-
+    padding: 0;
+    box-sizing: border-box;
     overflow-wrap: break-word;
    
 }
@@ -100,12 +101,6 @@ html, body{
     padding: 10px;
   }
   
- 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   body{
     background-color: #D2D2D2;
     /* background-image: url(/public/model.png); */

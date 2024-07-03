@@ -20,7 +20,7 @@ const AdminCourses = () => {
             if (Array.isArray(values.technologies)) {
                 tempTechnologies = values.technologies.join(",");
             } else {
-                tempTechnologies = values.technologies;
+                // tempTechnologies = values.technologies;
             }
 
             dispatch(ShowLoading())

@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 const Contact = () => {
     const { portfolioData } = useSelector(state => state.root);
     const { contact } = portfolioData;
+
     return (
         <div>
             <div className='autoShow'>

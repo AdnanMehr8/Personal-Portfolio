@@ -15,8 +15,21 @@ const tabStyle = {
     color: 'white',
 };
 
+const buttonStyle = {
+    backgroundColor: '#1a1a1a',
+    color: 'white',
+    border: 'none',
+    padding: '8px 16px',
+    cursor: 'pointer',
+    borderRadius: '4px',
+    marginLeft: '10px',
+    fontSize: '16px',
+    textDecoration: 'none'
+};
+
 const Admin = () => {
     const { portfolioData } = useSelector((state) => state.root);
+
     useEffect(() => {
         if (!localStorage.getItem("token")) {
             window.location.href = "admin-login";
@@ -29,17 +42,18 @@ const Admin = () => {
             <div className='flex gap-10 items-center px-5 py-2 justify-between'>
                 <div className='flex gap-10 items-center'>
                     <h1 className='text-3xl text-white'>Portfolio Admin</h1>
-                    <div className='w-60 h-[1px] bg-gray-500'></div>
+                    <button
+                        style={buttonStyle}
+                        onClick={() => {
+                            localStorage.removeItem("token");
+                            window.location.href = "/admin-login";
+                        }}
+                    >
+                        Log Out
+                    </button>
                 </div>
-                <h1
-                    className='underline text-white text-xl cursor-pointer mt-4'
-                    onClick={() => {
-                        localStorage.removeItem("token");
-                        window.location.href = "/admin-login";
-                    }}
-                >
-                    Log Out
-                </h1>
+                {/* The div for visual separation */}
+                <div className='w-60 h-[1px] bg-gray-500'></div>
             </div>
             {portfolioData && (
                 <div className='px-5 text-white pb-10'>

@@ -36,7 +36,7 @@ const Admin = () => {
                     Log Out</h1>
             </div>
             {portfolioData && <div className='px-5 text-white pb-10'>
-                <Tabs defaultActiveKey="1" className = 'text-white'  >
+                <Tabs defaultActiveKey="1">
                     <TabPane tab="Intro" key="1">
                         <AdminIntro />
                     </TabPane>

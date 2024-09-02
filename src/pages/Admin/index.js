@@ -37,22 +37,22 @@ const Admin = () => {
             </div>
             {portfolioData && <div className='px-5 text-white pb-10'>
                 <Tabs defaultActiveKey="1" >
-                    <TabPane tab="Intro" key="1">
+                    <TabPane className = 'text-white'  tab="Intro" key="1">
                         <AdminIntro />
                     </TabPane>
-                    <TabPane tab="About" key="2">
+                    <TabPane className = 'text-white'  tab="About" key="2">
                         <AdminAbout />
                     </TabPane>
-                    <TabPane tab="Experiences" key="3">
+                    <TabPane className = 'text-white'  tab="Experiences" key="3">
                         <Experiences />
                     </TabPane>
-                    <TabPane tab="Projects" key="4">
+                    <TabPane className = 'text-white'  tab="Projects" key="4">
                         <AdminProjects />
                     </TabPane>
-                    <TabPane tab="Courses" key="5">
+                    <TabPane className = 'text-white'  tab="Courses" key="5">
                         <AdminCourses />
                     </TabPane>
-                    <TabPane tab="Contact" key="6">
+                    <TabPane className = 'text-white'  tab="Contact" key="6">
                         <AdminContact />
                     </TabPane>
                 </Tabs>

@@ -32,7 +32,7 @@ const Admin = () => {
                     <div className='w-60 h-[1px] bg-gray-500'></div>
                 </div>
                 <h1
-                    className='underline text-white text-xl cursor-pointer'
+                    className='underline text-white text-xl cursor-pointer mt-4'
                     onClick={() => {
                         localStorage.removeItem("token");
                         window.location.href = "/admin-login";

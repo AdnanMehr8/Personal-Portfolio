@@ -34,7 +34,7 @@ const Login = () => {
                 <hr />
                 <input type='text' value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })} placeholder='username' />
                 <input type='password' value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })} placeholder='password' />
-                <button className='bg-primary text-white p-2 w-1/3 ' onClick={login}>Login</button>
+                <button className='bg-black text-white p-2 w-1/3 ' onClick={login}>Login</button>
             </div>
         </div>
     )

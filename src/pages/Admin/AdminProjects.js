@@ -84,11 +84,11 @@ const AdminProjects = () => {
             <div className='grid grid-cols-3 gap-5 mt-5 sm:grid-cols-1'>
                 {projects.map((project) => (
                     <div className='shadow border border-gray-400 flex flex-col gap-5 p-5 break-words'>
-                        <h1 className='text-primary'>{project.title}</h1>
+                        <h1 className='text-white'>{project.title}</h1>
                         <hr />
                         <img src={project.image} alt='' className='h-60 w-80' />
-                        <h1 className='text-xl'>{project.title}</h1>
-                        <h1 className='text-sm'>{project.description}</h1>
+                        <h1 className='text-xl text-white'>{project.title}</h1>
+                        <h1 className='text-sm text-white'>{project.description}</h1>
                         <div className='flex justify-end gap-5 mt-5'>
                             <button className='bg-red-500 text-white px-5 py-2'
                                 onClick={() => {

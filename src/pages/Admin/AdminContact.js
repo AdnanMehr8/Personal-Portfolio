@@ -28,22 +28,22 @@ const AdminContact = () => {
     return (
         <div>
             <Form onFinish={onFinish} layout='vertical' initialValues={portfolioData.contact}>
-                <Form.Item name='name' label='Name:'>
+                <Form.Item className = 'text-white'  name='name' label='Name:'>
                     <input placeholder='Name' />
                 </Form.Item>
-                <Form.Item name='gender' label='Gender:'>
+                <Form.Item className = 'text-white'  name='gender' label='Gender:'>
                     <input placeholder='Gender' />
                 </Form.Item>
-                <Form.Item name='age' label='Age:'>
+                <Form.Item className = 'text-white'  name='age' label='Age:'>
                     <input placeholder='Age' />
                 </Form.Item>
-                <Form.Item name='email' label='Email:'>
+                <Form.Item className = 'text-white'  name='email' label='Email:'>
                     <input placeholder='Email' />
                 </Form.Item>
-                <Form.Item name='mobile' label='Mobile #:'>
+                <Form.Item className = 'text-white'  name='mobile' label='Mobile #:'>
                     <input placeholder='Mobile #' />
                 </Form.Item>
-                <Form.Item name='address' label='Address:'>
+                <Form.Item className = 'text-white'  name='address' label='Address:'>
                     <input placeholder='Address' />
                 </Form.Item>
 

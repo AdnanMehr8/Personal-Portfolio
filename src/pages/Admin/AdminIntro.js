@@ -28,19 +28,19 @@ const AdminIntro = () => {
   return (
     <div>
       <Form onFinish={onFinish} layout='vertical' initialValues={portfolioData.intro}>
-        <Form.Item name='welcomeText' label='Welcome Text:'>
+        <Form.Item className = 'text-white' name='welcomeText' label='Welcome Text:'>
           <input placeholder='welcomeText' />
         </Form.Item>
-        <Form.Item name='firstName' label='First Name:'>
+        <Form.Item className = 'text-white'  name='firstName' label='First Name:'>
           <input placeholder='First Name' />
         </Form.Item>
-        <Form.Item name='lastName' label='Last Name:'>
+        <Form.Item className = 'text-white'  name='lastName' label='Last Name:'>
           <input placeholder='Last Name' />
         </Form.Item>
-        <Form.Item name='caption' label='Caption:'>
+        <Form.Item className = 'text-white'  name='caption' label='Caption:'>
           <input placeholder='Caption' />
         </Form.Item>
-        <Form.Item name='description' label='Description:'>
+        <Form.Item className = 'text-white'  name='description' label='Description:'>
           <textarea placeholder='Description' />
         </Form.Item>
         <div className='flex w-full justify-start'>

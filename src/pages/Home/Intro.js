@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePhoto from './profilePhoto.png';
 import { useSelector } from 'react-redux';
-import cv from './Adnan Haider.pdf';
+import cv from './Adnan HaiderCV.pdf';
 import resume from './resume.pdf'
 const Intro = () => {
   const { portfolioData } = useSelector(state => state.root);
@@ -31,13 +31,6 @@ const Intro = () => {
           rel='noopener noreferrer'
         >
           CV
-        </a></span> <span>  <a
-          href={resume}
-          className='text-tertiary underline'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Resume
         </a></span></p> 
       </div>
     </div>

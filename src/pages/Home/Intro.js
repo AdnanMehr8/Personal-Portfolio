@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePhoto from './profilePhoto.png';
 import { useSelector } from 'react-redux';
-import cv from './Adnan HaiderCV.pdf';
+import cv from './Adnan_Haider.pdf';
 import resume from './resume.pdf'
 const Intro = () => {
   const { portfolioData } = useSelector(state => state.root);
